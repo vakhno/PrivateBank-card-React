@@ -1,0 +1,42 @@
+@import '../index'
+
+.main-values
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    z-index: 5
+    column-gap: 10px
+    &__value
+        flex-grow: 1
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        background-color: $accent
+        padding: 30px 10px
+        color: #fff
+        &:last-child
+            margin-right: 0px
+        &:hover
+            background-color: $dark-gray
+            transition: 0.3s
+    &__count-buy
+        display: flex
+        gap: 15px
+        flex-direction: column
+        align-items: center
+    &__count-sale
+        display: flex
+        flex-direction: column
+        gap: 15px
+        align-items: center
+
+@media only screen and (max-width : 560px)
+    .main-values
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1fr 1fr 1fr
+        row-gap: 10px
+        &__value
+            flex-direction: row
+            padding: 0 15px
+        &__name
+            writing-mode: vertical-rl
