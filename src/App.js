@@ -16,15 +16,11 @@ class App extends React.Component {
 			currencyRate: {},
 			cashMachines: {},
 			terminals: {},
-			cities: [],
 		}
 	}
 
 	componentDidMount() {
 		this.getRate();
-
-		this.getCashMachines();
-		this.getSelfServiceTerminals();
 	}
 
 	getRate = () => {
@@ -53,76 +49,43 @@ class App extends React.Component {
 			});
 	}
 
-	getCashMachines = (city) => {
-		fetch(`https://cors-anywhere.herokuapp.com/https://api.privatbank.ua/p24api/infrastructure?json&atm&address=&city=${city}`, {
-			method: 'GET',
-			headers: {
-				'X-Requested-With': 'XMLHttpRequest',
-				'Access-Control-Allow-Origin': '*',
-			},
-			mode: 'cors',
-		})
-			.then(data => {
-				return data.json();
-			})
-			.then(data => {
-				return data;
-			});
-	}
+	// Список городов хранится в cities.JSON  
+	// getCitiesList = (e) => {
+	// 	fetch(`https://cors-anywhere.herokuapp.com/https://api.privatbank.ua/p24api/infrastructure?json&atm&address=&city=`, {
+	// 		method: 'GET',
+	// 		headers: {
+	// 			'X-Requested-With': 'XMLHttpRequest',
+	// 			'Access-Control-Allow-Origin': '*',
+	// 		},
+	// 		mode: 'cors',
+	// 	})
+	// 		.then(data => {
+	// 			return data.json();
+	// 		})
+	// 		.then(data => {
+	// 			let allCities = new Set();
 
-	getCashMachines = (city) => {
-		fetch(`https://cors-anywhere.herokuapp.com/https://api.privatbank.ua/p24api/infrastructure?json&tso&address=&city=${city}`, {
-			method: 'GET',
-			headers: {
-				'X-Requested-With': 'XMLHttpRequest',
-				'Access-Control-Allow-Origin': '*',
-			},
-			mode: 'cors',
-		})
-			.then(data => {
-				return data.json();
-			})
-			.then(data => {
-				return data;
-			});
-	}
+	// 			data.devices.forEach((elem, index) => {
+	// 				allCities.add(elem.cityRU)
+	// 			});
 
-	getSelfServiceTerminals = (e) => {
-		fetch(`https://cors-anywhere.herokuapp.com/https://api.privatbank.ua/p24api/infrastructure?json&atm&address=&city=`, {
-			method: 'GET',
-			headers: {
-				'X-Requested-With': 'XMLHttpRequest',
-				'Access-Control-Allow-Origin': '*',
-			},
-			mode: 'cors',
-		})
-			.then(data => {
-				return data.json();
-			})
-			.then(data => {
-				let allCities = new Set();
+	// 			allCities = Array.from(allCities).sort((a, b) => {
+	// 				const firstCity = a.trim();
+	// 				const secondCity = b.trim();
 
-				data.devices.forEach((elem, index) => {
-					allCities.add(elem.cityRU)
-				});
-
-				allCities = Array.from(allCities).sort((a, b) => {
-					const firstCity = a.trim();
-					const secondCity = b.trim();
-
-					if (firstCity < secondCity) {
-						return -1;
-					}
-					if (firstCity > secondCity) {
-						return 1;
-					}
-					return 0;
-				})
-				this.setState({
-					cities: allCities,
-				})
-			});
-	}
+	// 				if (firstCity < secondCity) {
+	// 					return -1;
+	// 				}
+	// 				if (firstCity > secondCity) {
+	// 					return 1;
+	// 				}
+	// 				return 0;
+	// 			})
+	// 			this.setState({
+	// 				cities: allCities,
+	// 			})
+	// 		});
+	// }
 
 	render() {
 		return (
@@ -130,11 +93,10 @@ class App extends React.Component {
 				<div className="card" >
 					<Header />
 					<Switch>
-						<Route
-							path='/' exact
-							render={props => <Main currencyRate={this.state.currencyRate} />}
+						<Route path='/' exact component={Main} />
+						<Route path='/places' component={Places}
+						// render={props => <Places handle={this.handleLanguage machineData={}} />}
 						/>
-						<Route path='/places' component={Places} />
 						<Route
 							path='/currency'
 							render={props => <Currency currencyRate={this.state.currencyRate} />}
