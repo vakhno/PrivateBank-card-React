@@ -1,15 +1,28 @@
-import React from 'react';
-import arrows from './arrows.svg';
-import './Calculator.sass';
+import React from 'react'
+import arrows from './arrows.svg'
+import './Calculator.sass'
+const exchangeItems = {
+	type: 'radio',
+	name: 'choose-method',
+	machines: [
+		{
+			id: 'buy-radio',
+			checked: true,
+			title: 'Покупка'
+		}, {
+			id: 'sale-radio',
+			title: 'Продажа'
+		}]
+}
 
 class Calculator extends React.Component {
 	constructor(props) {
-		super(props);
+		super(props)
 		this.state = {
 			startValue: '',
 			currentCurrency: '',
 			finalValue: '',
-		};
+		}
 	}
 
 	static getDerivedStateFromProps(props, state) {
@@ -19,11 +32,11 @@ class Calculator extends React.Component {
 	}
 
 	calculateValue = (e) => {
-		e.preventDefault();
-		let saleOrBuy = (e.target.elements['buy-radio'].checked === true) ? 0 : 1;
-		let value = e.target.elements['input-value'].value;
-		let multiply = this.state.currencyRate[e.target.elements['select-currency'].value][saleOrBuy];
-		let calcValue = Number(value * multiply).toFixed(2);
+		e.preventDefault()
+		let saleOrBuy = (e.target.elements['buy-radio'].checked === true) ? 0 : 1
+		let value = e.target.elements['input-value'].value
+		let multiply = this.state.currencyRate[e.target.elements['select-currency'].value][saleOrBuy]
+		let calcValue = Number(value * multiply).toFixed(2)
 
 		this.setState({
 			startValue: value,
@@ -37,10 +50,16 @@ class Calculator extends React.Component {
 			<div className="calculator">
 				<form className="calculator__form" onSubmit={this.calculateValue}>
 					<div className="calculator__btns-wrapper radio-btns title-roboto-16-700">
-						<input type="radio" id="buy-radio" defaultChecked name="choose-method" />
-						<label htmlFor="buy-radio">Покупка</label>
-						<input type="radio" id="sale-radio" name="choose-method" />
-						<label htmlFor="sale-radio">Продажа</label>
+						{
+							exchangeItems.machines.map(elem => {
+								return (
+									<>
+										<input type={exchangeItems.type} id={elem.id} defaultChecked={elem.checked} name={exchangeItems.name} />
+										<label htmlFor={elem.id}>{`${elem.title}`}</label>
+									</>
+								)
+							})
+						}
 					</div>
 					<select className='calculator__currency drop-list-default title-roboto-16-700' name="select-currency">
 						{Object.keys(this.state.currencyRate).map((elem, index) => (
@@ -55,9 +74,8 @@ class Calculator extends React.Component {
 				<object className='calculator__arrows' data={arrows} type="">arrows</object>
 				<div className='calculator__final-value title-roboto-18-700'>{this.state.finalValue}</div>
 			</div >
-		);
+		)
 	}
 }
 
-
-export default Calculator;
+export default Calculator

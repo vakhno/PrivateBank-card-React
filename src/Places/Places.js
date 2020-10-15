@@ -1,13 +1,27 @@
-import React, { useState } from 'react';
-import { withScriptjs, withGoogleMap } from 'react-google-maps';
-import * as Cities from '../cities.json';
-import Map from '../Map/Map.js';
-import './Places.sass';
-const WrappedMap = withScriptjs(withGoogleMap(Map));
+import React from 'react'
+import { withScriptjs, withGoogleMap } from 'react-google-maps'
+import * as Cities from '../cities.json'
+import Map from '../Map/Map.js'
+import './Places.sass'
+const machineItems = {
+	type: 'radio',
+	name: 'choose-machine',
+	machines: [
+		{
+			id: 'self-terminal',
+			checked: true,
+			title: 'Терминал'
+		}, {
+			id: 'cash-machines',
+			title: 'Банкомат'
+		}]
+}
+
+const WrappedMap = withScriptjs(withGoogleMap(Map))
 
 class Places extends React.Component {
 	constructor(props) {
-		super(props);
+		super(props)
 		this.state = {
 			key: 'AIzaSyDHsBvb0Wq3AaQV-vYjxdeSM_16enhTrTk',
 			city: '',
@@ -17,7 +31,7 @@ class Places extends React.Component {
 	}
 
 	getPlacesOfMachines = () => {
-		const urlMachine = (this.state.machineType === 'selfTerminal') ? 'json&tso' : 'json&atm';
+		const urlMachine = (this.state.machineType === 'selfTerminal') ? 'json&tso' : 'json&atm'
 		fetch(`https://cors-anywhere.herokuapp.com/https://api.privatbank.ua/p24api/infrastructure?${urlMachine}&address=&city=${this.state.city}`, {
 			method: 'GET',
 			headers: {
@@ -27,20 +41,20 @@ class Places extends React.Component {
 			mode: 'cors',
 		})
 			.then(data => {
-				return data.json();
+				return data.json()
 			})
 			.then(data => {
 				this.setState({
 					data: data
 				})
-				return data;
-			});
+				return data
+			})
 	}
 
 	getCityMachinesInfo = (e) => {
-		e.preventDefault();
-		let userMachineType = (e.target.elements['self-terminal'].checked === true) ? 'selfTerminal' : 'cashMachine';
-		let userCity = e.target.elements['city-input'].value;
+		e.preventDefault()
+		let userMachineType = (e.target.elements['self-terminal'].checked === true) ? 'selfTerminal' : 'cashMachine'
+		let userCity = e.target.elements['city-input'].value
 		if (Object.values(Cities.default).includes(userCity)) {
 			this.setState({
 				city: userCity,
@@ -63,10 +77,16 @@ class Places extends React.Component {
 						))}
 					</datalist>
 					<div className="machines__btns-wrapper radio-btns title-roboto-16-700">
-						<input type="radio" id="self-terminal" defaultChecked name="choose-machine" />
-						<label htmlFor="self-terminal">Терминал</label>
-						<input type="radio" id="cash-machines" name="choose-machine" />
-						<label htmlFor="cash-machines">Банкомат</label>
+						{
+							machineItems.machines.map(elem => {
+								return (
+									<>
+										<input type={machineItems.type} id={elem.id} defaultChecked={elem.checked} name={machineItems.name} />
+										<label htmlFor={elem.id}>{`${elem.title}`}</label>
+									</>
+								)
+							})
+						}
 					</div>
 					<button type='submit' className='machines__finder button__default title-roboto-16-700'>Найти</button>
 				</form>
@@ -78,8 +98,8 @@ class Places extends React.Component {
 					dataForMarkers={this.state.data.devices}
 				/>
 			</div>
-		);
+		)
 	}
 }
 
-export default Places;
+export default Places

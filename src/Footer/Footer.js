@@ -1,5 +1,5 @@
-import React from 'react';
-import './Footer.sass';
+import React from 'react'
+import './Footer.sass'
 import github from './github.svg'
 
 class Footer extends React.Component {
@@ -11,8 +11,8 @@ class Footer extends React.Component {
 					<object className='footer__github-object' data={github} type="">arrows</object>
 				</a>
 			</footer>
-		);
+		)
 	}
 }
 
-export default Footer;
+export default Footer

@@ -1,12 +1,12 @@
 import React from 'react'
-import { GoogleMap, Marker, InfoWindow } from 'react-google-maps';
+import { GoogleMap, Marker, InfoWindow } from 'react-google-maps'
+const workTime = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье', 'В праздники']
 
 class Map extends React.Component {
 	constructor(props) {
-		super(props);
+		super(props)
 		this.state = {
 			key: 'AIzaSyDHsBvb0Wq3AaQV-vYjxdeSM_16enhTrTk',
-			workTime: ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье', 'В праздники'],
 			mapCenter: {
 				lat: 48.125835,
 				lng: 31.740809
@@ -56,7 +56,7 @@ class Map extends React.Component {
 								<div style={{ fontWeight: '600', fontSize: '12px', textAlign: 'center' }} >Время работы:</div>
 								<div className='machine__dates'>
 									{Object.values(machine.tw).map((elem, index) => (
-										<div>{this.state.workTime[index]}: {elem}</div>
+										<div style={{ textAlign: 'center' }}>{workTime[index]}: {elem}</div>
 									))}
 								</div>
 							</div>
@@ -75,7 +75,7 @@ class Map extends React.Component {
 			>
 				{this.getMarkers()}
 			</GoogleMap>
-		);
+		)
 	}
 }
 

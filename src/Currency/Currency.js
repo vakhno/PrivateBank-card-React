@@ -1,9 +1,9 @@
-import React from 'react';
-import './Currency.sass';
+import React from 'react'
+import './Currency.sass'
 
 class Contacts extends React.Component {
 	constructor(props) {
-		super(props);
+		super(props)
 		this.state = {
 		}
 	}
@@ -26,8 +26,8 @@ class Contacts extends React.Component {
 				))
 				}
 			</div>
-		);
+		)
 	}
 }
 
-export default Contacts;
+export default Contacts
