@@ -11,7 +11,7 @@ class Map extends React.Component {
 				lat: 48.125835,
 				lng: 31.740809
 			},
-			defaultZoom: 5,
+			defaultZoom: 4,
 			selectedMarker: null,
 		}
 	}

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './Places.sass';
 import { withScriptjs, withGoogleMap } from 'react-google-maps';
 import * as Cities from '../cities.json';
 import Map from '../Map/Map.js';
+import './Places.sass';
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 
 class Places extends React.Component {
@@ -54,21 +54,21 @@ class Places extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<form action="" onSubmit={this.getCityMachinesInfo}>
-					<input className='' list="city-selector" id='city-input' name="select-city" />
-					<datalist id="city-selector">
+			<div className="machines">
+				<form className="machines__form" action="" onSubmit={this.getCityMachinesInfo}>
+					<input className='machines__city-input input__dark-light title-roboto-16-700' list="city-selector" id='city-input' name="select-city" placeholder="Введите город..." />
+					<datalist id="city-selector" className="drop-list-default">
 						{Object.values(Cities.default).map((elem, index) => (
 							<option key={index} value={elem} />
 						))}
 					</datalist>
-					<div className="calculator__btns-wrapper title-roboto-16-700">
+					<div className="machines__btns-wrapper radio-btns title-roboto-16-700">
 						<input type="radio" id="self-terminal" defaultChecked name="choose-machine" />
-						<label className='calculator__choose-radio' htmlFor="self-terminal">Терминал</label>
+						<label htmlFor="self-terminal">Терминал</label>
 						<input type="radio" id="cash-machines" name="choose-machine" />
-						<label className='calculator__choose-radio' htmlFor="cash-machines">Банкомат</label>
+						<label htmlFor="cash-machines">Банкомат</label>
 					</div>
-					<button type='submit' className='calculator__convert title-roboto-16-700'>Найти</button>
+					<button type='submit' className='machines__finder button__default title-roboto-16-700'>Найти</button>
 				</form>
 				<WrappedMap
 					googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${this.state.key}`}

@@ -1,161 +1,115 @@
 @import '../index.sass'
-    
+
 .calculator
-    background-color: $white
-    min-height: 200px
-    display: grid
-    grid-template-rows: auto 1fr
-    grid-template-columns: 1fr auto 1fr
-    justify-items: space-between
-    align-items: center
-    padding: 20px 10px
-    &__form
-        grid-column-start: 1
-        grid-column-end: 4
-        display: grid
-        grid-template-columns: auto auto minmax( 130px,1fr) auto auto
-    &__btns-wrapper
-        display: flex
-    &__currency
-        position: relative
-        color: $white
-        background-color: $accent
-        text-align: center
-        height: 60px
-        margin-right: 5px
-        display: block
-        cursor: pointer
-        border: none
-        outline: none
-    &__currency option
-        border: 4px black solid !important
-    &__convert
-        color: $white
-        background-color: $accent
-        text-align: center
-        height: 60px
-        display: block
-        cursor: pointer
-        border: none
-        outline: none
-    &__start-value
-        justify-self: center
-    &__final-value
-        justify-self: center
-    &__form label
-        width: 90px
-        height: 60px
-        display: flex
-        justify-content: center
-        align-items: center
-        background-color: $dark-gray
-    &__btns-wrapper
-        margin-right: 30px
-    &__default-currency
-        width: 60px
-        height: 60px
-        color: $white
-        display: flex
-        justify-content: center
-        align-items: center
-        margin-right: 30px
-        background-color: $light-gray
-    &__value-currency
-        padding: 0
-        box-sizing: border-box
-        color: $white
-        background-color: $dark-gray
-        text-align: center
-        height: 60px
-        padding: 0 15px
-        margin-right: 5px
-        display: block
-        cursor: pointer
-        border: none
-        outline: none
-        &::placeholder
-            color: $white
-    &__arrows
-        padding: 0 10px
-    &__btns-wrapper input, 
-    &__form .payment-plan input, 
-    &__form .payment-type input
-        display: none
-    &__btns-wrapper input:checked + label, 
-    &__form .payment-plan input:checked + label, 
-    &__form .payment-type input:checked + label
-        color: $white
-        background-color: $accent
-    input[type=number]::-webkit-inner-spin-button 
-        appearance: none
+	background-color: $white
+	min-height: 200px
+	display: grid
+	grid-template-rows: auto 1fr
+	grid-template-columns: 1fr auto 1fr
+	justify-items: space-between
+	align-items: center
+	padding: 20px 10px
+	&__form
+		grid-column-start: 1
+		grid-column-end: 4
+		display: grid
+		grid-template-columns: auto auto minmax( 130px,1fr) auto auto
+	&__btns-wrapper
+		display: flex
+		margin-right: 30px
+	&__currency
+		position: relative
+		text-align: center
+		margin-right: 5px
+		display: block
+	&__convert
+		display: block
+	&__start-value
+		justify-self: center
+	&__final-value
+		justify-self: center
+	&__default-currency
+		width: 60px
+		color: $white
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 30px
+		background-color: $light-gray
+	&__value-currency
+		box-sizing: border-box
+		margin-right: 5px
+		display: block
+	&__arrows
+		padding: 0 10px
 
 @media only screen and (max-width : 810px)
-    .calculator
-        &__form
-            row-gap: 5px
-        &__convert
-            justify-self: stretch
-            grid-column-start: 1
-            grid-column-end: 7
-            grid-row-start: 2
-            grid-row-end: 4
-        &__currency
-            margin-right: 5px !important
-        &__btns-wrapper
-            margin-right: 5px !important
-        &__default-currency
-            margin: 0 !important
+	.calculator
+		&__form
+			row-gap: 5px
+		&__convert
+			justify-self: stretch
+			grid-column-start: 1
+			grid-column-end: 7
+			grid-row-start: 2
+			grid-row-end: 4
+		&__currency
+			margin-right: 5px !important
+		&__btns-wrapper
+			margin-right: 5px !important
+		&__default-currency
+			margin: 0 !important
 
 @media only screen and (max-width : 645px)
-    .calculator
-        &__form
-            grid-column-start: 1
-            grid-column-end: 6
-            display: grid
-            grid-template-columns: auto auto minmax( 130px,1fr) auto !important
-        &__convert
-            justify-self: stretch
-            grid-column-start: 1
-            grid-column-end: 5
-            grid-row-start: 2
-            grid-row-end: 4
+	.calculator
+		&__form
+			grid-column-start: 1
+			grid-column-end: 6
+			display: grid
+			grid-template-columns: auto auto minmax( 130px,1fr) auto !important
+		&__convert
+			justify-self: stretch
+			grid-column-start: 1
+			grid-column-end: 5
+			grid-row-start: 2
+			grid-row-end: 4
 
 @media only screen and (max-width : 560px)
-    .calculator
-        &__form
-            justify-items: center
-            display: grid
-            row-gap: 5px
-            grid-template-columns: auto 1fr auto !important
-            grid-template-rows: auto 1fr auto !important
-        &__btns-wrapper
-            grid-column-start: 1
-            grid-column-end: 5
-            grid-row: 1
-        &__convert
-            grid-row: 3
-        &__default-currency
-            grid-column-start: 3
-            grid-column-end: 4
-            justify-self: stretch
-            margin: 0 !important
-            grid-row: 2
-        &__form label
-            width: 100% !important
-        &__btns-wrapper
-            width: 100% !important
-            margin: 0 !important
-        &__value-currency
-            width: 100% !important 
-            grid-row: 2
-            grid-column-start: 2
-            grid-column-end: 2
-            margin: 0 !important
-        &__currency
-            grid-column: 1
-            margin: 0 !important
-            justify-self: stretch
+	.calculator
+		&__form
+			justify-items: center
+			display: grid
+			row-gap: 5px
+			grid-template-columns: auto 1fr auto !important
+			grid-template-rows: auto 1fr auto !important
+		&__btns-wrapper
+			grid-column-start: 1
+			grid-column-end: 5
+			grid-row: 1
+		&__convert
+			grid-row: 3
+		&__default-currency
+			grid-column-start: 3
+			grid-column-end: 4
+			justify-self: stretch
+			margin: 0 !important
+			grid-row: 2
+		&__form label
+			width: 100% !important
+		&__btns-wrapper
+			width: 100% !important
+			margin: 0 !important
+		&__value-currency
+			width: 100% !important
+			grid-row: 2
+			grid-column-start: 2
+			grid-column-end: 2
+			margin: 0 !important
+		&__currency
+			grid-column: 1
+			margin: 0 !important
+			justify-self: stretch
 
 @media only screen and (max-width : 560px)
-    .calculator__arrows
-        width: 35px
+	.calculator__arrows
+		width: 35px

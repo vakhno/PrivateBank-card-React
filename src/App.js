@@ -94,8 +94,8 @@ class App extends React.Component {
 					<Header />
 					<Switch>
 						<Route path='/' exact component={Main} />
-						<Route path='/places' component={Places}
-						// render={props => <Places handle={this.handleLanguage machineData={}} />}
+						<Route path='/places'
+							render={props => <Places />}
 						/>
 						<Route
 							path='/currency'

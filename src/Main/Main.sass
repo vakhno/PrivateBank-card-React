@@ -1,58 +1,59 @@
 @import '../index'
-    
-.main
-    display: flex
-    flex-direction: column
-    &__losung
-        display: flex
-        flex-direction: column
-        align-items: center
-        align-self: center
-    &__title-block
-        display: flex
-        flex-direction: column
-        align-items: center
-    &__content
-        height: 100%    
-        display: grid
-        column-gap: 15px
-        grid-template-columns: minmax(120px, 300px) 1fr
-    &__title
-        margin-bottom: 2px
-    &__bg-image
-        background-repeat: no-repeat
-        background-position: top right
-    &__info
-        height: 100%
-        display: flex
-        flex-direction: column
-        justify-content: space-between
-    &__feature
-        display: flex
-        padding: 12px
-        justify-content: space-between
-        background-color: $accent
-        &:hover
-            background-color: $light-gray
-            transition: 0.4s
-        &:last-child
-            margin-bottom: 0
-    &__feature-info
-        align-self: center
-        margin-right: 8px
-    &__feature-losung
-        margin-bottom: 4px
-    &__feature-icon
-        width: 50px
 
+.main
+	display: flex
+	flex-direction: column
+	&__losung
+		display: flex
+		flex-direction: column
+		align-items: center
+		align-self: center
+	&__title-block
+		display: flex
+		flex-direction: column
+		align-items: center
+	&__content
+		height: 100%
+		display: grid
+		column-gap: 15px
+		grid-template-columns: minmax(120px, 300px) 1fr
+	&__title
+		margin-bottom: 2px
+	&__bg-image
+		background-repeat: no-repeat
+		background-position: top right
+	&__info
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	&__feature
+		color: $black
+		display: flex
+		padding: 12px
+		justify-content: space-between
+		background-color: $accent
+		&:hover
+			background-color: $light-gray
+			transition: 0.4s
+		&:last-child
+			margin-bottom: 0
+	&__feature-info
+		align-self: center
+		margin-right: 8px
+	&__feature-losung
+		margin-bottom: 4px
+	&__feature-icon
+		pointer-events: none
+		width: 50px
 
 @media only screen and (max-width : 640px)
-    .main
-        &__content
-            grid-template-columns: 1fr 
-            margin: 0 auto
-            width: 100%
-            max-width: 450px
-            column-gap: 0px
-        &__bg-image
-            display: none
+	.main
+		&__content
+			grid-template-columns: 1fr
+			margin: 0 auto
+			width: 100%
+			max-width: 450px
+			column-gap: 0px
+		&__bg-image
+			display: none
