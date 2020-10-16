@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bdc44bf4d5ba04c0948712214693da35",
+    "revision": "2ffd6e16d673d4160d06a926bb0e905f",
     "url": "/PrivateBank-web-card/index.html"
   },
   {
-    "revision": "2a7f000585e52e215467",
+    "revision": "e2a48f2bbc4e72045946",
     "url": "/PrivateBank-web-card/static/css/main.fcd6b82f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PrivateBank-web-card/static/js/2.49244682.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2a7f000585e52e215467",
-    "url": "/PrivateBank-web-card/static/js/main.2fcb09a5.chunk.js"
+    "revision": "e2a48f2bbc4e72045946",
+    "url": "/PrivateBank-web-card/static/js/main.75d4df3d.chunk.js"
   },
   {
     "revision": "a68ac75d4f1dcc51a6ca",

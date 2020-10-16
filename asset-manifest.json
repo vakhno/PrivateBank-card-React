@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/PrivateBank-web-card/static/css/main.fcd6b82f.chunk.css",
-    "main.js": "/PrivateBank-web-card/static/js/main.2fcb09a5.chunk.js",
-    "main.js.map": "/PrivateBank-web-card/static/js/main.2fcb09a5.chunk.js.map",
+    "main.js": "/PrivateBank-web-card/static/js/main.75d4df3d.chunk.js",
+    "main.js.map": "/PrivateBank-web-card/static/js/main.75d4df3d.chunk.js.map",
     "runtime-main.js": "/PrivateBank-web-card/static/js/runtime-main.06392fa9.js",
     "runtime-main.js.map": "/PrivateBank-web-card/static/js/runtime-main.06392fa9.js.map",
     "static/js/2.49244682.chunk.js": "/PrivateBank-web-card/static/js/2.49244682.chunk.js",
     "static/js/2.49244682.chunk.js.map": "/PrivateBank-web-card/static/js/2.49244682.chunk.js.map",
     "index.html": "/PrivateBank-web-card/index.html",
-    "precache-manifest.621989d3b6248e562beceee39b965ca4.js": "/PrivateBank-web-card/precache-manifest.621989d3b6248e562beceee39b965ca4.js",
+    "precache-manifest.6d2de624fb4ab68091c3b0768a713ed3.js": "/PrivateBank-web-card/precache-manifest.6d2de624fb4ab68091c3b0768a713ed3.js",
     "service-worker.js": "/PrivateBank-web-card/service-worker.js",
     "static/css/main.fcd6b82f.chunk.css.map": "/PrivateBank-web-card/static/css/main.fcd6b82f.chunk.css.map",
     "static/js/2.49244682.chunk.js.LICENSE.txt": "/PrivateBank-web-card/static/js/2.49244682.chunk.js.LICENSE.txt",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.06392fa9.js",
     "static/js/2.49244682.chunk.js",
     "static/css/main.fcd6b82f.chunk.css",
-    "static/js/main.2fcb09a5.chunk.js"
+    "static/js/main.75d4df3d.chunk.js"
   ]
 }

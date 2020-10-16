@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/PrivateBank-web-card/precache-manifest.621989d3b6248e562beceee39b965ca4.js"
+  "/PrivateBank-web-card/precache-manifest.6d2de624fb4ab68091c3b0768a713ed3.js"
 );
 
 self.addEventListener('message', (event) => {
