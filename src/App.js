@@ -49,7 +49,7 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<Router>
+			<Router basename="/PrivateBank-web-card">
 				<div className="card" >
 					<Header />
 					<Switch>
