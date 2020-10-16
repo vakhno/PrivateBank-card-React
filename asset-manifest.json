@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/PrivateBank-web-card/static/css/main.fcd6b82f.chunk.css",
+    "main.js": "/PrivateBank-web-card/static/js/main.2fcb09a5.chunk.js",
+    "main.js.map": "/PrivateBank-web-card/static/js/main.2fcb09a5.chunk.js.map",
+    "runtime-main.js": "/PrivateBank-web-card/static/js/runtime-main.06392fa9.js",
+    "runtime-main.js.map": "/PrivateBank-web-card/static/js/runtime-main.06392fa9.js.map",
+    "static/js/2.49244682.chunk.js": "/PrivateBank-web-card/static/js/2.49244682.chunk.js",
+    "static/js/2.49244682.chunk.js.map": "/PrivateBank-web-card/static/js/2.49244682.chunk.js.map",
+    "index.html": "/PrivateBank-web-card/index.html",
+    "precache-manifest.621989d3b6248e562beceee39b965ca4.js": "/PrivateBank-web-card/precache-manifest.621989d3b6248e562beceee39b965ca4.js",
+    "service-worker.js": "/PrivateBank-web-card/service-worker.js",
+    "static/css/main.fcd6b82f.chunk.css.map": "/PrivateBank-web-card/static/css/main.fcd6b82f.chunk.css.map",
+    "static/js/2.49244682.chunk.js.LICENSE.txt": "/PrivateBank-web-card/static/js/2.49244682.chunk.js.LICENSE.txt",
+    "static/media/Currency.sass": "/PrivateBank-web-card/static/media/RobotoRegular.18b2429b.woff",
+    "static/media/arrows.svg": "/PrivateBank-web-card/static/media/arrows.923fedab.svg",
+    "static/media/github.svg": "/PrivateBank-web-card/static/media/github.516338f8.svg",
+    "static/media/iphone.png": "/PrivateBank-web-card/static/media/iphone.6c1c547f.png",
+    "static/media/logo.png": "/PrivateBank-web-card/static/media/logo.fdeafdce.png",
+    "static/media/museum.svg": "/PrivateBank-web-card/static/media/museum.3ec6b887.svg",
+    "static/media/online-banking.svg": "/PrivateBank-web-card/static/media/online-banking.249874c0.svg",
+    "static/media/profit.svg": "/PrivateBank-web-card/static/media/profit.56bc37ea.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.06392fa9.js",
+    "static/js/2.49244682.chunk.js",
+    "static/css/main.fcd6b82f.chunk.css",
+    "static/js/main.2fcb09a5.chunk.js"
+  ]
+}

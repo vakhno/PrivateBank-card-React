@@ -1,0 +1,9 @@
+{
+	"short_name": "PrivateBank",
+	"name": "PrivateBank API card",
+	"icons": [],
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "#000000",
+	"background_color": "#ffffff"
+}
