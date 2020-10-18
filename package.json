@@ -2,7 +2,7 @@
 	"name": "privatebankapi",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://vakhno.github.io/PrivateBank-web-card/",
+	"homepage": "https://vakhno.github.io/PrivateBank-card-React/",
 	"dependencies": {
 		"@react-google-maps/api": "^1.9.9",
 		"@testing-library/jest-dom": "^4.2.4",
