@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/PrivateBank-web-card/static/css/main.fcd6b82f.chunk.css",
-    "main.js": "/PrivateBank-web-card/static/js/main.75d4df3d.chunk.js",
-    "main.js.map": "/PrivateBank-web-card/static/js/main.75d4df3d.chunk.js.map",
-    "runtime-main.js": "/PrivateBank-web-card/static/js/runtime-main.06392fa9.js",
-    "runtime-main.js.map": "/PrivateBank-web-card/static/js/runtime-main.06392fa9.js.map",
-    "static/js/2.49244682.chunk.js": "/PrivateBank-web-card/static/js/2.49244682.chunk.js",
-    "static/js/2.49244682.chunk.js.map": "/PrivateBank-web-card/static/js/2.49244682.chunk.js.map",
-    "index.html": "/PrivateBank-web-card/index.html",
-    "precache-manifest.6d2de624fb4ab68091c3b0768a713ed3.js": "/PrivateBank-web-card/precache-manifest.6d2de624fb4ab68091c3b0768a713ed3.js",
-    "service-worker.js": "/PrivateBank-web-card/service-worker.js",
-    "static/css/main.fcd6b82f.chunk.css.map": "/PrivateBank-web-card/static/css/main.fcd6b82f.chunk.css.map",
-    "static/js/2.49244682.chunk.js.LICENSE.txt": "/PrivateBank-web-card/static/js/2.49244682.chunk.js.LICENSE.txt",
-    "static/media/Currency.sass": "/PrivateBank-web-card/static/media/RobotoRegular.18b2429b.woff",
-    "static/media/arrows.svg": "/PrivateBank-web-card/static/media/arrows.923fedab.svg",
-    "static/media/github.svg": "/PrivateBank-web-card/static/media/github.516338f8.svg",
-    "static/media/iphone.png": "/PrivateBank-web-card/static/media/iphone.6c1c547f.png",
-    "static/media/logo.png": "/PrivateBank-web-card/static/media/logo.fdeafdce.png",
-    "static/media/museum.svg": "/PrivateBank-web-card/static/media/museum.3ec6b887.svg",
-    "static/media/online-banking.svg": "/PrivateBank-web-card/static/media/online-banking.249874c0.svg",
-    "static/media/profit.svg": "/PrivateBank-web-card/static/media/profit.56bc37ea.svg"
+    "main.css": "/PrivateBank-card-React/static/css/main.3d71603d.chunk.css",
+    "main.js": "/PrivateBank-card-React/static/js/main.76a39b0c.chunk.js",
+    "main.js.map": "/PrivateBank-card-React/static/js/main.76a39b0c.chunk.js.map",
+    "runtime-main.js": "/PrivateBank-card-React/static/js/runtime-main.90b569d0.js",
+    "runtime-main.js.map": "/PrivateBank-card-React/static/js/runtime-main.90b569d0.js.map",
+    "static/js/2.49244682.chunk.js": "/PrivateBank-card-React/static/js/2.49244682.chunk.js",
+    "static/js/2.49244682.chunk.js.map": "/PrivateBank-card-React/static/js/2.49244682.chunk.js.map",
+    "index.html": "/PrivateBank-card-React/index.html",
+    "precache-manifest.7c259e859ae893c22f01160d793dc3fc.js": "/PrivateBank-card-React/precache-manifest.7c259e859ae893c22f01160d793dc3fc.js",
+    "service-worker.js": "/PrivateBank-card-React/service-worker.js",
+    "static/css/main.3d71603d.chunk.css.map": "/PrivateBank-card-React/static/css/main.3d71603d.chunk.css.map",
+    "static/js/2.49244682.chunk.js.LICENSE.txt": "/PrivateBank-card-React/static/js/2.49244682.chunk.js.LICENSE.txt",
+    "static/media/Currency.sass": "/PrivateBank-card-React/static/media/RobotoRegular.18b2429b.woff",
+    "static/media/arrows.svg": "/PrivateBank-card-React/static/media/arrows.923fedab.svg",
+    "static/media/github.svg": "/PrivateBank-card-React/static/media/github.516338f8.svg",
+    "static/media/iphone.png": "/PrivateBank-card-React/static/media/iphone.6c1c547f.png",
+    "static/media/logo.png": "/PrivateBank-card-React/static/media/logo.fdeafdce.png",
+    "static/media/museum.svg": "/PrivateBank-card-React/static/media/museum.3f40ca09.svg",
+    "static/media/online-banking.svg": "/PrivateBank-card-React/static/media/online-banking.249874c0.svg",
+    "static/media/profit.svg": "/PrivateBank-card-React/static/media/profit.56bc37ea.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.06392fa9.js",
+    "static/js/runtime-main.90b569d0.js",
     "static/js/2.49244682.chunk.js",
-    "static/css/main.fcd6b82f.chunk.css",
-    "static/js/main.75d4df3d.chunk.js"
+    "static/css/main.3d71603d.chunk.css",
+    "static/js/main.76a39b0c.chunk.js"
   ]
 }
