@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e4e0476520607d96bea9aa81b9ab27bd",
+    "revision": "00b2d33ab976123e774cb8af8cfd9ce6",
     "url": "/PrivateBank-card-React/index.html"
   },
   {
-    "revision": "8ad93867faa9ff1f4468",
+    "revision": "294765c5e7ddccb597ba",
     "url": "/PrivateBank-card-React/static/css/main.3d71603d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/PrivateBank-card-React/static/js/2.49244682.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8ad93867faa9ff1f4468",
-    "url": "/PrivateBank-card-React/static/js/main.76a39b0c.chunk.js"
+    "revision": "294765c5e7ddccb597ba",
+    "url": "/PrivateBank-card-React/static/js/main.151f64bf.chunk.js"
   },
   {
     "revision": "f82b27f9081a188b2ef0",

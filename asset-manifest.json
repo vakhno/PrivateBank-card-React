@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/PrivateBank-card-React/static/css/main.3d71603d.chunk.css",
-    "main.js": "/PrivateBank-card-React/static/js/main.76a39b0c.chunk.js",
-    "main.js.map": "/PrivateBank-card-React/static/js/main.76a39b0c.chunk.js.map",
+    "main.js": "/PrivateBank-card-React/static/js/main.151f64bf.chunk.js",
+    "main.js.map": "/PrivateBank-card-React/static/js/main.151f64bf.chunk.js.map",
     "runtime-main.js": "/PrivateBank-card-React/static/js/runtime-main.90b569d0.js",
     "runtime-main.js.map": "/PrivateBank-card-React/static/js/runtime-main.90b569d0.js.map",
     "static/js/2.49244682.chunk.js": "/PrivateBank-card-React/static/js/2.49244682.chunk.js",
     "static/js/2.49244682.chunk.js.map": "/PrivateBank-card-React/static/js/2.49244682.chunk.js.map",
     "index.html": "/PrivateBank-card-React/index.html",
-    "precache-manifest.7c259e859ae893c22f01160d793dc3fc.js": "/PrivateBank-card-React/precache-manifest.7c259e859ae893c22f01160d793dc3fc.js",
+    "precache-manifest.81e06f57a7a1aa1e315d48d4693f661f.js": "/PrivateBank-card-React/precache-manifest.81e06f57a7a1aa1e315d48d4693f661f.js",
     "service-worker.js": "/PrivateBank-card-React/service-worker.js",
     "static/css/main.3d71603d.chunk.css.map": "/PrivateBank-card-React/static/css/main.3d71603d.chunk.css.map",
     "static/js/2.49244682.chunk.js.LICENSE.txt": "/PrivateBank-card-React/static/js/2.49244682.chunk.js.LICENSE.txt",
@@ -25,6 +25,6 @@
     "static/js/runtime-main.90b569d0.js",
     "static/js/2.49244682.chunk.js",
     "static/css/main.3d71603d.chunk.css",
-    "static/js/main.76a39b0c.chunk.js"
+    "static/js/main.151f64bf.chunk.js"
   ]
 }
