@@ -1,4 +1,4 @@
-This project was created with 'create-react-app' [See result](https://vakhno.github.io/PrivateBank-card-React/).
+[See result](https://vakhno.github.io/PrivateBank-card-React/).
 
 ## Available Scripts
 
